@@ -23,7 +23,7 @@ def home():
         result = str(result).strip('[]')
         flash('The price is $ '+ result)
         return redirect(url_for('home'))
-        return result 
+    
 
     return render_template('home.html',myform=form) 
     
